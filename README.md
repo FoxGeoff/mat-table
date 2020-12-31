@@ -13,7 +13,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 3. Add material module
 4. Add core and share module folders
 5. Add flex layout
-6. Code ref: <http://github.com/foxgeoff/ai-client2020-rev3>
+6. Code ref: <http://github.com/foxgeoff/ai-client2020-rev3>.
 
 ### Use of folders core and shared
 
