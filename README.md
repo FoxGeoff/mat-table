@@ -63,3 +63,8 @@ To enable code execution from the current workspace you must enable workspace li
 ### Task: Getting started
 
 1. Ref: <https://v7.material.angular.io/components/table/overview#getting-started>
+
+```JAvascript
+/**
+ *  NEW PROJECT APP: TIME SHEET FOR FOXGRAPHICS 12-31-2020
+ */
