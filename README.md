@@ -69,7 +69,7 @@ To enable code execution from the current workspace you must enable workspace li
  *  NEW PROJECT APP: TIME SHEET FOR FOXGRAPHICS 12-31-2020
  */
 
-## Task: FUNCTIONAL REQUIREMENTS
+## Task: FUNCTIONAL REQUIREMENTS ver1
 
 ### Employee page to allow entry of times on the job
 
@@ -86,8 +86,8 @@ To enable code execution from the current workspace you must enable workspace li
 ### Server API:
 
 1. EmployeeWorkDone Table: id, employeeId, hours, jobId, startTime, endTime
-2. EmployeeWorkAsigned Table: id, employeeId, hours, jobId, startTime, endTime
-2. EmployeeDetails Table: id, companyDetailsId, firstName, lastName, email, phone
+2. EmployeeWorkAssigned Table: id, employeeId, hours, jobId, startTime, endTime
+2. EmployeeDetails Table: id, companyDetailsId, firstName, lastName, email, phone, isActiveAtCompany
 3. JobsDetails Table: id, name, estimatedHours, workedHours
 4. JobTasks Table: id, jobDetailsId, name, estimatedHours, employeeId
 5. SupervisorDetails Table: id, companyDetailsId, firstName, lastName, email, phone
