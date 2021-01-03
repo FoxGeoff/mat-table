@@ -6,17 +6,21 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreModule } from './core/core.module';
+import { EmployeeComponent } from './employee/employee.component';
+import { MaterialModule } from './shared/material.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EmployeeComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     // AppRoutingModule,
     BrowserAnimationsModule,
-    CoreModule
+    CoreModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

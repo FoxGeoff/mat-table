@@ -8,12 +8,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ### Task: Add Angular Material, share and core modules
 
+## Note: **MaterialModule must be in each feature module and restart app to see the effect**
+
 1. Run: ```ng add @angular/material```
 2. Ref: <https://material.angular.io/guide/getting-started>
 3. Add material module
 4. Add core and share module folders
 5. Add flex layout
-6. Code ref: <http://github.com/foxgeoff/ai-client2020-rev3>.
+6. Code ref: <http://github.com/foxgeoff/ai-client2020-rev3>
+7. Material Design: <https://material.io/components/buttons#usage>
 
 ### Use of folders core and shared
 
@@ -64,12 +67,12 @@ To enable code execution from the current workspace you must enable workspace li
 
 1. Ref: <https://v7.material.angular.io/components/table/overview#getting-started>
 
-```JAvascript
+```Javascript
 /**
  *  NEW PROJECT APP: TIME SHEET FOR FOXGRAPHICS 12-31-2020
  */
 
-## Task: FUNCTIONAL REQUIREMENTS ver1
+## Task: FUNCTIONAL REQUIREMENTS ver1.1
 
 ### Employee page to allow entry of times on the job
 
@@ -88,8 +91,9 @@ To enable code execution from the current workspace you must enable workspace li
 1. EmployeeWorkDone Table: id, employeeId, hours, jobId, startTime, endTime
 2. EmployeeWorkAssigned Table: id, employeeId, hours, jobId, startTime, endTime
 2. EmployeeDetails Table: id, companyDetailsId, firstName, lastName, email, phone, isActiveAtCompany
-3. JobsDetails Table: id, name, estimatedHours, workedHours
+3. JobsDetails Table: id, employeeWorkAssignedId, name, estimatedHours, workedHours, 
 4. JobTasks Table: id, jobDetailsId, name, estimatedHours, employeeId
 5. SupervisorDetails Table: id, companyDetailsId, firstName, lastName, email, phone
 6. CompanyDetails Table: id, companyCalanderId, name, address, city, state, zipcode
 7. CompanyCalander Table: id dayOfWeek, month, date, year
+```
