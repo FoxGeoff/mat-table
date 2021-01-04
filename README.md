@@ -46,6 +46,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ### Task: FIX THIS ERROR
 
+## Note: **TSLint Error is fixed by moving to ESLint as described in the readme file**
+
 ```Javascript
 Not using the local TSLint version found for 'c:/Users/foxge/Github/mat-table/src/app/app.module.ts'
 To enable code execution from the current workspace you must enable workspace library execution.
@@ -53,6 +55,32 @@ To enable code execution from the current workspace you must enable workspace li
 
 1. SOLUTION: <https://stackoverflow.com/questions/65228384/tslint-extension-throwing-errors-in-my-angular-application-running-in-visual-stu>
 2. Basic answer: we no longer use TSLint, use ESLint instead
+3. Solution: <https://code.visualstudio.com/api/advanced-topics/tslint-eslint-migration#eslint-installation>
+4. Step #1 Allow Typescript to understan ESLint, run: ```npm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin```
+5. Step #2 Now, to make the actual migration simpler, run the tslint-to-eslint-config utility. ```npx tslint-to-eslint-config``
+
+```Typescript
+/* result */
+✨ 91 rules replaced with their ESLint equivalents. ✨
+
+❗ 8 ESLint rules behave differently from their TSLint counterparts ❗
+  Check ./tslint-to-eslint-config.log for details.
+
+❓ 2 rules are not known by tslint-to-eslint-config to have ESLint equivalents. ❓
+  The "@typescript-eslint/tslint/config" section of ./.eslintrc.js configures eslint-plugin-tslint to run them in TSLint within ESLint.
+  Check ./tslint-to-eslint-config.log for details.
+
+☠ Prettier plugins are missing from your configuration. ☠
+  We highly recommend running tslint-to-eslint-config --prettier to disable formatting ESLint rules.
+  See https://github.com/typescript-eslint/tslint-to-eslint-config/blob/master/docs/FAQs.md#should-i-use-prettier.
+
+⚡ 9 new packages are required for this ESLint configuration. ⚡
+  npm install @angular-eslint/eslint-plugin @angular-eslint/eslint-plugin-template @typescript-eslint/eslint-plugin @typescript-eslint/eslint-plugin-tslint @typescript-eslint/parser eslint eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-prefer-arrow --save-dev
+
+♻ Consider using --comments to replace TSLint comment directives in your source files. ♻
+
+✅ All is well! ✅
+```
 
 ### Task: Add <https://github.com/angular/flex-layout>
 
