@@ -82,16 +82,21 @@ To enable code execution from the current workspace you must enable workspace li
 ✅ All is well! ✅
 ```
 
-### Task: ESLint: Run
+### Task: ESLint: Run (failed)
 
 1. Ref <https://code.visualstudio.com/api/advanced-topics/tslint-eslint-migration#eslint-run>
 2. Add to package.json: ```"lint": "eslint -c .eslintrc.js --ext .ts <mySrcFolder>"``` in scripts section
 3. Run ```eslint -c .eslintrc.js --ext .ts <mySrcFolder>```
 
-### Task add prettier and config
+### Task: Add prettier, plugin and config
 
 1. Run```npm install --save-dev prettier```
 2. Run```npm install --save-dev eslint-config-prettier```
+3. Add to scripts/ package.json ```"eslint": "eslint ."```// this will run eslint on all files
+4. Add plugin: To install, run ```npm install --save-dev eslint-plugin-prettier```
+5. Now run ```npm run eslint```
+
+### **RUN THIS TO FIX ERRORS** Ref how to: <https://pakatagoh.com/blog/setting-up-eslint-and-prettier-with-vs-code-in-2019>
 
 ### Task: Add <https://github.com/angular/flex-layout>
 
