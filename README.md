@@ -98,6 +98,26 @@ To enable code execution from the current workspace you must enable workspace li
 
 ### **RUN THIS TO FIX ERRORS** Ref how to: <https://pakatagoh.com/blog/setting-up-eslint-and-prettier-with-vs-code-in-2019>
 
+### Task: **Run ESLint Temp Fix**
+
+1. Ref: <https://stackoverflow.com/questions/65228384/tslint-extension-throwing-errors-in-my-angular-application-running-in-visual-stu>
+
+```typescript
+
+Like @Tuấn Nguyễn described, you need to:
+
+    Go to Command Palette by pressing Ctrl + Shift + P,
+
+    In the input that pops up at the top of the VS Code, start typing
+
+    TSLint: Manage workspace library execution"
+
+    and hit Enter key.
+
+    From the menu that replaces the input, pick enable workspace library execution and again press Enter key.
+
+```
+
 ### Task: Add <https://github.com/angular/flex-layout>
 
 ### **DO RUN THIS - flex-layout must match cli rev**
