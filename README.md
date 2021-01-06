@@ -152,7 +152,7 @@ Like @Tuấn Nguyễn described, you need to:
 
 ### Server API:
 
-1. EmployeeWorkDone Table: id, employeeId, hours, jobId, startTime, endTime
+1. EmployeeWorkDone Table: id, employeeId, hours, jobId, startTime, endTime  
 2. EmployeeWorkAssigned Table: id, employeeId, hours, jobId, startTime, endTime
 2. EmployeeDetails Table: id, companyDetailsId, firstName, lastName, email, phone, isActiveAtCompany
 3. JobsDetails Table: id, employeeWorkAssignedId, name, estimatedHours, workedHours, 
@@ -161,3 +161,5 @@ Like @Tuấn Nguyễn described, you need to:
 6. CompanyDetails Table: id, companyCalanderId, name, address, city, state, zipcode
 7. CompanyCalander Table: id dayOfWeek, month, date, year
 ```
+
+### Task: Add in memory set of data <== HERE
