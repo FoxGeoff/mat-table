@@ -162,4 +162,6 @@ Like @Tuấn Nguyễn described, you need to:
 7. CompanyCalander Table: id dayOfWeek, month, date, year
 ```
 
-### Task: Add in memory set of data <== HERE
+### Task: Add in memory set of data
+
+1. Ref Code Project: github/my-fitness
