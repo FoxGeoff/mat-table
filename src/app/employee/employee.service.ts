@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { EmployeeData } from '../Shared/employee-data';
 import { Employee} from '../Shared/interfaces/employee'
 
 @Injectable({
@@ -6,9 +7,10 @@ import { Employee} from '../Shared/interfaces/employee'
 })
 export class EmployeeService {
 
-  constructor() { }
+  constructor(private employeeData: EmployeeData) { }
 
   getEmployees(): Employee[] {
-    return this.allEmployees.slice();
+    return this.employeeData.getAllEmployees().slice();
   }
+  
 }
