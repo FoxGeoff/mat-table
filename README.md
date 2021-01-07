@@ -154,12 +154,12 @@ Like @Tuấn Nguyễn described, you need to:
 
 1. EmployeeWorkDone Table: id, employeeId, hours, jobId, startTime, endTime  
 2. EmployeeWorkAssigned Table: id, employeeId, hours, jobId, startTime, endTime
-2. EmployeeDetails Table: id, companyDetailsId, firstName, lastName, email, phone, isActiveAtCompany
+2. Employee Table: id, companyId, firstName, lastName, email, phone, isActive      <== DONE
 3. JobsDetails Table: id, employeeWorkAssignedId, name, estimatedHours, workedHours, 
 4. JobTasks Table: id, jobDetailsId, name, estimatedHours, employeeId
 5. SupervisorDetails Table: id, companyDetailsId, firstName, lastName, email, phone
-6. CompanyDetails Table: id, companyCalanderId, name, address, city, state, zipcode
-7. CompanyCalander Table: id dayOfWeek, month, date, year
+6. Company Table: id, calanderId, name, address, city, state, zipcode
+7. Calander Table: id dayOfWeek, month, date, year
 ```
 
 ### Task: Add in memory set of data
