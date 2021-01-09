@@ -1,4 +1,3 @@
-import { getMaxListeners } from "process";
 import { Employee } from "./interfaces/employee";
 
 export class EmployeeData {
