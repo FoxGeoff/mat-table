@@ -1,4 +1,4 @@
 export class SupervisorEmployee {
   supervisorId : number;
-  EmployeeId: number;
+  employeeId: number;
 }
